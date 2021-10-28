@@ -22,7 +22,6 @@ function dbLabel(text, createUser) {
     'zh-CN': 'zh_CN',
     'zh-TW': 'zh_TW',
   };
-  // var lang = ['en', 'ar', 'es', 'fr', 'ja', 'ko', 'th', 'vi', 'zh-CN', 'zh-TW'];
   var queryArray = [];
   for (let i in lang) {
     const xhr = new XMLHttpRequest();
