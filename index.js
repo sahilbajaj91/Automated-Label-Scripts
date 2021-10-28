@@ -1,4 +1,4 @@
-dbLabel('Foodsafety Dash', 'NOM_5822');
+dbLabel('LABEL_VALUE', 'CREATE_USER');
 
 function dbLabel(text, createUser) {
   const data = JSON.stringify([
@@ -20,7 +20,7 @@ function dbLabel(text, createUser) {
     th: 'th_TH',
     vi: 'vi_VN',
     'zh-CN': 'zh_CN',
-    'zh-TW': 'zh_TW'
+    'zh-TW': 'zh_TW',
   };
   // var lang = ['en', 'ar', 'es', 'fr', 'ja', 'ko', 'th', 'vi', 'zh-CN', 'zh-TW'];
   var queryArray = [];
