@@ -1,6 +1,6 @@
-dbLabel('LABEL_VALUE', 'CREATE_USER');
+dbLabel('LABEL_VALUE', 'LABEL_KEY', 'CREATE_USER');
 
-function dbLabel(text, createUser) {
+function dbLabel(text, key, createUser) {
   const data = JSON.stringify([
     {
       Text: text,
@@ -32,7 +32,7 @@ function dbLabel(text, createUser) {
           "INSERT INTO CUSWEB.CW_LABELS (CREATE_DATE,CREATE_USER,SEQ,LABEL_KEY,LABEL_VALUE,LOCALE,VO_SEQ,PROFILE_SEQ,CUST_SEQ)VALUES (SYSDATE,'" +
           createUser +
           "',CUSWEB.CLBL_SEQ.NEXTVAL,'" +
-          text +
+          key +
           "','" +
           JSON.parse(this.responseText)[0].translations[0].text +
           "','" +
